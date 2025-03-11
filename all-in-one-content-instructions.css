@@ -1,0 +1,99 @@
+.ac_desc_grid-2 {
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.ac_desc_grid-2::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    height: calc(100% - 80px);
+    width: 1px;
+    background: #D9D9D9;
+    top: 45px;
+}
+.ac_desc_grid-2 .ac_desc:not(:last-child):after{
+    display: none;
+}
+.ac_desc_grid-2 .ac_desc p:not(:last-child){
+    padding-bottom: 20px;
+}
+.ac_desc_grid_video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.qure_founder_wrap .founder_info p {
+    font-weight: 300;
+}
+.qure_founder .qure_founder_info h3.throughout{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+}
+.trusted_bl.trustedVerified .trusted_verified {
+    max-width: max-content;
+}
+a.online_guide_btn {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px !important;
+    margin-top: 21px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 109.88px;
+    position: relative;
+}
+a.online_guide_btn img{
+    position: absolute;
+    right: 15px;
+    top: 16px;
+}
+.opacity-0{
+    opacity: 0;
+}
+.videos_sfc img{
+    width: 100%;
+}
+.usage_instructions_video {
+    border-radius: 7px;
+    overflow: hidden;
+}
+@media(min-width:768px){
+    .trusted_bl.trustedVerified .trusted_verified p {
+        letter-spacing: 1px;
+    }
+    .videos_sfc{
+        padding: 40px 70px;
+    }
+    .usage_instructions_video {
+        margin: 0 30px;
+    }
+}
+@media(max-width: 767px){
+    a.online_guide_btn img {
+        right: 50px;
+    }
+    .ac_desc_grid {
+        box-shadow: none;
+    }
+    .qure_founder .qure_founder_info h3.throughout, .turns_out_mob {
+        font-size: 12px;
+    }
+    .ac_desc_grid .ac_desc.faq .accordion-button .container {
+        font-size: 13px;
+    }
+    .ac_desc_grid .ac_desc.faq .accordion-button {
+        padding: 16px 0 0;
+    }
+    .ac_desc_grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .ac_desc_grid-2::after{
+        display: none;
+    }
+    .ac_desc_grid-2 .ac_desc:not(:last-child):after{
+        display: block;
+    }
+}
